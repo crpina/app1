@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Login</ion-title>
+    <ion-title>Iniciar Sesion</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -16,11 +16,14 @@
     </ion-item>
       
     <ion-item class="item-login">  
-      <ion-label position="floating" >Password</ion-label> 
+      <ion-label position="floating" >Contraseña</ion-label> 
       <ion-input type="password" [(ngModel)]="me.password" ></ion-input>
     </ion-item>
       
     <ion-button (click)="goTohome()" class="boton-goToHome"> <ion-icon name="log-in-outline"></ion-icon> </ion-button>
+    
+    <p class="Recuperar">Recuperar Contraseña</p>
+
 
   </div>
 

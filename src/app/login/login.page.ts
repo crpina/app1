@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationExtras, Router } from '@angular/router';
+import { AlfredService } from '../alfred.service';
 
 @Component({
   selector: 'app-login',
@@ -10,36 +11,31 @@ import { NavigationExtras, Router } from '@angular/router';
 
 export class LoginPage implements OnInit {
 
-
-  clave={
-    yo:"a",
-    password:"a"
-  }
-
   me={
     yo:"",
     password:""
   }
- 
 
-  constructor(private router :Router, ) { 
+  constructor(private router :Router, private alfred: AlfredService ) { 
  
   }
 
   ngOnInit() {
+    
   }
 
- 
   goTohome(){
 
+   if(this.me.yo=== this.alfred.getNameUsuario() && this.me.password === this.alfred.getPassword() ){
 
-   if(this.me.yo===this.clave.yo && this.me.password === this.clave.password){
-
-    this.router.navigate(['/home'])
-   } 
-   
-
+    this.router.navigate(['/home', this.me.yo])
+   }
 
   }
+
+  Recuperar(){
+
+  }
+
 
 }
