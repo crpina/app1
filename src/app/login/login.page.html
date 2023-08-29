@@ -7,8 +7,6 @@
 <ion-content [fullscreen]="true">
   
 
-
-
   <div class="login-box">
     <ion-item class="item-login">  
       <ion-label position="floating">Usuario</ion-label> 
@@ -22,7 +20,7 @@
       
     <ion-button (click)="goTohome()" class="boton-goToHome"> <ion-icon name="log-in-outline"></ion-icon> </ion-button>
     
-    <p class="Recuperar">Recuperar Contraseña</p>
+    <p class="Recuperar" [routerLink] = "['/Rcontrasena']">Recuperar Contraseña</p>
 
 
   </div>
