@@ -36,5 +36,16 @@ export class AlfredService {
     return this.usuario.password;
   }
 
+  validateLogin(nama: String, password: String){
+
+    if(nama == this.usuario.name && password == this.usuario.password){
+
+      return true;
+    }else{
+      return false;
+    }
+
+  }
+
 
 }

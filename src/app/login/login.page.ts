@@ -26,9 +26,12 @@ export class LoginPage implements OnInit {
 
   goTohome(){
 
-   if(this.me.yo=== this.alfred.getNameUsuario() && this.me.password === this.alfred.getPassword() ){
+   if(this.alfred.validateLogin(this.me.yo,this.me.password)) {
 
     this.router.navigate(['/home', this.me.yo])
+   }else{
+
+    
    }
 
   }
