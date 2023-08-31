@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package com.fazweb.app;
 
 import com.getcapacitor.BridgeActivity;
 
