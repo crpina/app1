@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AlfredService } from './alfred.service';
 
 
+
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
@@ -16,3 +17,4 @@ import { AlfredService } from './alfred.service';
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+
